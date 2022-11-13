@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>邱的筆記</title>
+        <link href="login.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="https://i.imgur.com/MLxjrDq.jpg">
+        <script src="login.js"></script>
+    </head>
+    <body>
+        <form id="register" name="myForm" class="register" action="infoReceive.jsp"  method="post">
+            <div class="t1">
+                <input style="color:white;border-width:0px;margin:0 auto;width:150px;height:50px; background-color:rgb(125, 147, 168);"
+                    type='submit' onclick="TurnToLogin()" value="登入">
+            </div>
+            <div class="t2">
+                <input style="border-width:0px;margin:0 auto;width:150px;height:50px;background-color:rgb(19, 126, 226); "
+                    type='submit' onclick="TurnToRegister()" value='註冊'>
+            </div>
+            <div class="t3">
+                <input style="width:250px;height:50px;" type="email" name="email" id="email" placeholder="請輸入郵箱"></td>
+            </div>
+            <div class="t3">
+                <input style="width:250px;height:50px;" type="text" name="name"  required="required" placeholder="請輸入使用者名稱"></td>
+            </div>
+            <div class="t3">
+                <input style="margin:0 auto; width:250px;height:50px;" type="password" id="pwd" required="required"
+                    placeholder="請輸入6-20位密碼，建議數字和字母組合"></td>
+            </div>
+            <div class="t3">
+                <input style="margin:0 auto; width:250px;height:50px;" type="password" id="pwd2" required="required"
+                    placeholder="確認密碼"></td>
+            </div>
+            <div class="t7">
+                <input style="width:120px;height:50px;" type="yanzheng" name="yanzheng" required="required" placeholder="輸入驗證碼"></td>
+                <div class="t8">
+                </div>
+            </div>
+            <div class="t5">
+                <input name="tongyi" type="checkbox" required="required">我同意《使用者註冊協議》<br></td>
+            </div>
+            <div class="t6">
+                <input style="color:white;border-width:0px;margin:0 auto; width:250px;height:50px;background-color:#187FE4;"
+                    type="submit" onclick="validateForm()" value="註冊"></td>
+            </div>
+        </form>
+    
+    
+        <form id="login" name="myForm2" class="login" action="welcome.html" onsubmit="return checkUser();" method="post">
+            <div class="t1">
+                <input style="color:white;border-width:0px;margin:0 auto;width:150px;height:50px; background-color:rgb(125, 147, 168);"
+                    type='button' onclick="TurnToLogin()" value='登入'>&nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="t2">
+                <input style="border-width:0px;margin:0 auto;width:150px;height:50px;background-color:rgb(125, 147, 168); "
+                    type='button' onclick="TurnToRegister()" value='註冊'>
+            </div>
+    
+            <div class="t3">
+                <input style="width:250px;height:50px;" type="text" name="name2" id="loginname" placeholder="請輸入使用者名稱"></td>
+            </div>
+            <div class="t3">
+                <input style="margin:0 auto; width:250px;height:50px;" type="password" name="pwd3" id="loginpwd"
+                    placeholder="請輸入密碼"></td>
+            </div>
+    
+            <div class="t6">
+                <input style="color:white;border-width:0px;margin:0 auto; width:250px;height:50px;background-color:#187FE4;"
+                    type="submit" value="登入"></td>
+            </div>
+        </form>   
+    </body>
+</html>
